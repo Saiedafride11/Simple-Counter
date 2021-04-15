@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Counter</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+      <div class="counter">
+         <h1>Javascript Simple Counter Tutorial</h1>;
+
+         <div class="counter-inner">
+               <!-- <button id="plus">+</button><br> -->
+               <button onclick=" rquationTotal(true)">+</button><br>
+               <input id="input" type="number" value="0">
+               <br>
+               <!-- <button id="minus">-</button> -->
+               <button onclick=" rquationTotal(false)">-</button>
+         </div>
+      </div>
+
+      <script>
+            // const plusNumber = document.getElementById('plus');
+            // plusNumber.addEventListener('click', function(){
+            //       const plusValue = document.getElementById('input').value;
+            //       const newPlusValue = parseInt(plusValue);
+            //       const totalPlus = newPlusValue + 1;
+            //       document.getElementById('input').value = totalPlus;
+            // })
+
+            // const minusNumber = document.getElementById('minus');
+            // minusNumber.addEventListener('click', function(){
+            //       const minusValue = document.getElementById('input').value;
+            //       const newMinusValue = parseInt(minusValue);
+            //       const totalMinus = newMinusValue - 1;
+            //       document.getElementById('input').value = totalMinus;
+            // })
+
+
+
+
+            // const plusNumber = document.getElementById('plus');
+            // plusNumber.addEventListener('click', function(){
+                  // rquationTotal(true)
+            // })
+
+            // const minusNumber = document.getElementById('minus');
+            // minusNumber.addEventListener('click', function(){
+                  // rquationTotal(false)
+            // })
+
+
+              function rquationTotal(eqution){
+                  const minusValue = document.getElementById('input').value;
+                  const newMinusValue = parseInt(minusValue);
+                  let totalMinus = newMinusValue;
+                  if(eqution == true){
+                        totalMinus = newMinusValue + 1;
+                  }
+                  if(eqution == false && newMinusValue > 0){
+                        totalMinus = newMinusValue -1;
+                  }
+                  document.getElementById('input').value = totalMinus;
+            }
+      </script>
+</body>
+</html>   
